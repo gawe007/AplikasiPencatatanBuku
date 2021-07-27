@@ -1,0 +1,101 @@
+<html>
+<head>
+	<title>Aplikasi Pencatatan Buku</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content-wrapper">
+			<div class="container">
+				<section class="content-header">
+					<h1>Aplikasi Pencatatan Buku</h1>
+				</section>
+				<section class="content">
+				<div class="card-form">
+					<div class="card card-form">
+						<div id="bukubaru" class="page">
+						<div class="card-header">
+						<p>
+							<h3>Daftar Buku Baru</h3>
+						</p>
+						</div>
+						<div class="card-body">
+							<form id="formTambah">
+							<div class='form-group'>
+								<label></label>
+								<input type='text' class="form-control" id="title"  name="title" maxlength="30" placeholder="Judul Buku" required/>
+							</div>
+							<div class='form-group'>
+								<label></label>
+								<input type='text' class="form-control" id="author" name="author" maxlength="20" placeholder="Author" required/>
+							</div>
+							<div class='form-group'>
+								<label>Tahun</label>
+								<select class="form-control" id="year" name="year" required>
+								</select>
+							</div>
+							<div class='form-group'>
+								<div class="row">
+								<button id="submitbutton" class="btn btn-primary">Save</button>&nbsp;&nbsp;
+								<button id="resetbutton" class="btn btn-danger">Reset</button>
+								</div>
+							</div>
+							</form>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-kiri">
+					<div class="card">
+						<div id="pRak1" class="page">
+							<div class="card-header">
+							<p>
+								<h3>Unread</h3>
+							</p>
+							</div>
+							<div class="card-body">
+								<form id="formCariBelum" name="formCariBelum">
+								<div class='form-group'>
+									<input type='search' id="cariBelum" class="form-control" name="cariBelum" maxlength="30" placeholder="search"/>
+									<button id="btncaribelum" class="btn btn-primary">Cari</button>
+									<button id="btncariresetbelum" class="btn btn-secondary">Reset</button>
+								</div>
+								</form>
+								<div id="containerbelum">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-kanan">
+					<div class="card">
+						<div id="pRak2" class="page">
+							<div class="card-header">
+							<p>
+								<h3>Done Read</h3>
+							</p>
+							</div>
+							<div class="card-body">
+								<form id="formCariSudah" name="formCariSudah">
+								<div class='form-group'>
+									<input type='search' id="cariSudah" class="form-control" name="cariSudah" maxlength="30" placeholder="search"/>
+									<button id="btncarisudah" class="btn btn-primary">Cari</button>
+									<button id="btncariresetsudah" class="btn btn-secondary">Reset</button>
+								</div>
+								</form>
+								<div id="containersudah">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
